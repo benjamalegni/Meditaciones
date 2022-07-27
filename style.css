@@ -238,3 +238,9 @@ hr{
 .tfecha{
   color:#000;
 }
+
+.book{
+  position: relative;
+  top:-100px;
+}
+

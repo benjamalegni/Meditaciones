@@ -19,6 +19,7 @@
 /* Main configs (book)*/
 main{
   padding-inline:16px;
+  font-family: 'Jost';
   margin-left: 15%;
   color: #fff;
 }
@@ -40,14 +41,14 @@ sup, sub { font-size:0.75em; line-height:normal; }
   box-shadow:var(--shadow-elevation-high);
 }
 
-.tlogo, .tautor, .ttitulo, .tsubtitulo, .trevision, .tfirma { margin:0 0.25em; text-align:center; text-indent:0; font-family:sans-serif; font-weight:bold; adobe-hyphenate:none; hyphenate:none; hyphens:none; -moz-hyphens:none; -webkit-hyphens:none; }
+.tlogo, .tautor,.ttitulo, .tsubtitulo, .trevision, .tfirma { margin:0 0.25em; text-align:center; text-indent:0; font-family:sans-serif; font-weight:bold; hyphens:none; -moz-hyphens:none; -webkit-hyphens:none; }
 	.tlogo span { margin:3em 0 2.5em; display:inline-block; width:8em; }
 	.tautor { margin-bottom:0.5em; font-size:1.2em; font-weight:normal; color:#595959; }
 	.ttitulo { padding:0; border:0; font-size:1.8em; font-style:normal; text-decoration:none; color:black; visibility:visible; }
 	.tsubtitulo { margin-top:0.3em; }
 	.trevision { margin-top:2.5em; font-size:0.8em; color:#595959; }
 	.tfirma { margin-top:0.25em; font-size:0.65em; }
-	.tfecha { font-family:sans-serif; font-weight:normal; color:#595959; }
+	.tfecha { font-family:'Jost',sans-serif; font-weight:normal; color:#595959; }
 
 .sinopsis, .sinopsis p, .autor, .autor p, .nota p { margin-top:0.5em; text-indent:0; }
 	.sinopsis p, .sinopsis em, .sinopsis strong, .sinopsis big, .sinopsis small, .sinopsis span { font-family:sans-serif; }
@@ -60,7 +61,7 @@ sup, sub { font-size:0.75em; line-height:normal; }
 /* ----- ESTILOS GENERALES (ADAPTABLES) ----- */
 
 /* encabezados */
-h1, h2, h3, h4, h5, h6 { margin:25% 0.25em 1em; text-align:center; text-indent:0; page-break-after:avoid; page-break-inside:avoid; adobe-hyphenate:none; hyphenate:none; hyphens:none; -moz-hyphens:none; -webkit-hyphens:none; }
+h1, h2, h3, h4, h5, h6 { margin:25% 0.25em 1em; text-align:center; text-indent:0; page-break-after:avoid; page-break-inside:avoid;; hyphens:none; -moz-hyphens:none; -webkit-hyphens:none; }
 	h1 { font-size:1.5em; }	/* sólo cambios aprobados, puede afectar páginas globales */
 	h2 { font-size:1.5em; }
 	h3 { font-size:1.4em; }
@@ -73,9 +74,12 @@ h1, h2, h3, h4, h5, h6 { margin:25% 0.25em 1em; text-align:center; text-indent:0
 	.dedicatoria p { text-align:right; text-indent:0; }
 
 /* tipografía */
-.sans, .sans p, .sans em, .sans strong, .sans big, .sans small { font-family:sans-serif; }
+/*.sans, .sans p, .sans em, .sans strong, .sans big, .sans small { 
+  font-family:'Jost',sans-serif; }
 .serif, .serif p, .serif em, .serif strong, .serif big, .serif small { font-family:serif; }
 code, kbd, .mono, .mono p, .mono em, .mono strong, .mono big, .mono small { font-family:monospace; }
+*/
+
 
 i, em, cite, dfn, .cursiva { font-style:italic; }
 b, strong, .negrita { font-weight:bold; }
@@ -159,14 +163,6 @@ page-container{
 }
 
 
-w0 {
-  width: 612.000000px;
-}
-
-.h0 {
-  height: 792.000000px;
-}
-
 
   /*@media min-width
 .pf {
@@ -176,25 +172,37 @@ w0 {
 }*/
 
 
-.pf {
+
+li, a{
   position: relative;
-  background-color: white;
-  overflow: hidden;
-  margin: 0;
-  border: 0;
-}
-
-
-li, ul, a{
-  position:relative;
-  left:-10px;
   font-size:.975em;
   color:#fff;
   font-family:'Cinzel', 'Cormorant SC';
   text-align: start;
-  margin:3px 0 0 5px;
+  margin:3px 0 0 2px;
 }
+
+#container{
+  position: relative;
+  top:15px;
+}
+
 body{
   background-image: url(/Images/background/background.jpg);
   background-repeat: no-repeat;
   }
+
+#tit-med{
+  font-family: Cinzel;
+  color: #FFD700;
+  font-weight: 500;
+  font-size: 150px;
+}
+
+#author{
+  color: #fff;
+}
+
+hr{
+  width: 1120px;
+}

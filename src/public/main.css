@@ -182,7 +182,7 @@ li, a{
 }
 
 body{
-  background-image: url(/Images/background/background.jpg);
+  background-image: url(background/background.jpg);
   background-repeat: round;
   background-size: 200%;
   }

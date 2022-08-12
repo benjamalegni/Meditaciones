@@ -15,6 +15,5 @@ app.use(indexRoutes)
 
 app.use(express.static(join(__dirname, '/public')))
 
-app.listen(process.env.port || 3000)
-console.log('server listening port', process.env.port || 3000)
-
+app.listen(process.env.PORT || 3000)
+console.log('server listening port', process.env.PORT || 3000)

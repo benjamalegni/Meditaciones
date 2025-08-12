@@ -1,0 +1,14 @@
+# Dependencies
+node_modules/
+
+# gh-pages cache
+node_modules/.cache/gh-pages/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db 

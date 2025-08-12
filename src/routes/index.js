@@ -1,6 +1,12 @@
 import {Router} from 'express'
+import { dirname, join } from 'path'
+import { fileURLToPath } from 'url'
 const router = Router()
 
-router.get('/', (req, res) => res.render(index))
+const __dirname = dirname(fileURLToPath(import.meta.url))
+
+router.get('/', (req, res) => {
+  res.sendFile(join(__dirname, '../views/index.html'))
+})
 
 export default router

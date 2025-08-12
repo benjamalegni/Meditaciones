@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon src/index.js",
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "build:gh": "rm -rf docs && mkdir -p docs && cp src/views/index.html docs/index.html && cp -r src/public/* docs/ && touch docs/.nojekyll",
+    "deploy": "npm run build:gh && gh-pages -d docs"
   },
   "repository": {
     "type": "git",
@@ -29,6 +31,7 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.19",
+    "gh-pages": "^6.1.1"
   }
 }
